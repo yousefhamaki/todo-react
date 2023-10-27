@@ -47,7 +47,6 @@ const todoReducer: Reducer<DataState, any> = (state = initialState, action) => {
       };
     // add task request success
     case ADD_TASK_SUCCESS:
-      console.log(state);
       return {
         ...state,
         data: [action.payload, ...(state.data as Task[])],
